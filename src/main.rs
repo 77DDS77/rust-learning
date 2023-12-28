@@ -16,6 +16,9 @@ mod compound_types;
 use compound_types::string_string_literal as s_lit;
 use compound_types::array as arr;
 use compound_types::slice as slc;
+use compound_types::tuple as tpl;
+use compound_types::structs as strct;
+
 
 fn main() {
     let mut x: i32 = 5;
@@ -49,6 +52,10 @@ fn main() {
     arr::_arrays();
 
     slc::_slices();
+
+    tpl::_tuples();
+
+    strct::_structs();
     
 }
 
