@@ -12,6 +12,11 @@ mod ownership;
 use ownership::ownership_borrowing as own_bor;
 use ownership::ownership_borrowing_p2 as own_bor_p2;
 
+mod compound_types;
+use compound_types::string_string_literal as s_lit;
+use compound_types::array as arr;
+use compound_types::slice as slc;
+
 fn main() {
     let mut x: i32 = 5;
     let y: i32 = 12;
@@ -38,6 +43,12 @@ fn main() {
 
     own_bor::_ownership_and_borrowing();
     own_bor_p2::_ownership_and_borrowing_p2();
+
+    s_lit::_string_and_string_literals();
+
+    arr::_arrays();
+
+    slc::_slices();
     
 }
 
