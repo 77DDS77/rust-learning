@@ -38,7 +38,7 @@ fn basic_struct_declaration(){
     println!("Person:\n name: {}, age: {}, email {}\n", p.name, p.age, p.email);
     
     //I can make mutable struct
-    let mut mut_p = create_person(String::from("Ajeje"), 32u8, String::from("ajeje@brazorf.it"));
+    let mut mut_p: Person = create_person(String::from("Ajeje"), 32u8, String::from("ajeje@brazorf.it"));
     println!("Mutable pre mutation:\n name: {}, age: {}, email {} \n", mut_p.name, mut_p.age, mut_p.email);
 
     mut_p.name = String::from("Pdor");

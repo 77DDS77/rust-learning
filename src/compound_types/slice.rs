@@ -48,8 +48,7 @@ fn size_of_slices() {
     */
     let slice: &[char] = &arr[..2];
     
-    // TIPS: slice( reference ) IS NOT an array, if it was an array, then `assert!` will be passed: 
-    //  Each of the two chars '中' and '国'  occupies 4 bytes, 2 * 4 = 8
+    // TIPS: slice( reference ) IS NOT an array
     assert!(std::mem::size_of_val(&arr) == 12);
     assert!(std::mem::size_of_val(&slice) == 16);
 

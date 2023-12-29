@@ -2,7 +2,7 @@
 /*
     * TUPLES:
         - way to store related pieces of information in a single variable
-        - collection of calues of different type grouped together as
+        - collection of values of different type grouped together as
             a single COMPOUND TYPE ( type composed of other types )
         - stored as a fixed size contiguous block of memory in the stack
         - signature is (T1, T2, T3 ..)
