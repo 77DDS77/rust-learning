@@ -18,6 +18,10 @@ use compound_types::array as arr;
 use compound_types::slice as slc;
 use compound_types::tuple as tpl;
 use compound_types::structs as strct;
+use compound_types::enums as enms;
+
+mod flow_control;
+use flow_control::flow_control as flw_ctrl;
 
 
 fn main() {
@@ -56,7 +60,10 @@ fn main() {
     tpl::_tuples();
 
     strct::_structs();
-    
+
+    enms::_enums();
+
+    flw_ctrl::_flow_control();
 }
 
 /**
