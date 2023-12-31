@@ -32,8 +32,6 @@ fn if_else() {
     }
 } 
 
-
-// Fix the errors
 fn if_else_assignement() {
     let n: i32 = 25;
 
@@ -51,6 +49,7 @@ fn if_else_assignement() {
 
     println!("{} -> {}\n", n, big_n);
 }
+
 
 /*
     * FOR 
@@ -108,7 +107,7 @@ fn for_loop_using_array() {
 /*
     To obtain an ( index, value ) tuple out of a for loop
     we have to trasform the Array/Vector into an iterator
-    using .into() (or other similar .into_mut() .into_iter())
+    using .iter() (or other similar .into_mut() .into_iter())
     and then we .enumerate() it.
 
     values in the ( index, value ) tupla are always reference
@@ -119,7 +118,6 @@ fn for_loop_with_index() {
     let a: [i32; 4] = [4, 3, 2, 1];
     let names: [String; 3] = [String::from("liming"),String::from("hanmeimei"),String::from("davide")];
 
-    // Iterate the indexing and value in 'a'
     for (i,v) in a.iter().enumerate() {
         println!("Index: {} Value: {}",i ,v);
     }
