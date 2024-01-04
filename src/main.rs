@@ -23,6 +23,7 @@ use compound_types::enums as enms;
 mod flow_control;
 use flow_control::flow_control as flw_ctrl;
 use flow_control::pattern_match as ptrn_match;
+use flow_control::patterns_pt2 as ptrn_pt2;
 
 
 fn main() {
@@ -67,6 +68,8 @@ fn main() {
     flw_ctrl::_flow_control();
 
     ptrn_match::_pattern_match();
+
+    ptrn_pt2::_pattern_pt2();
 }
 
 /**
